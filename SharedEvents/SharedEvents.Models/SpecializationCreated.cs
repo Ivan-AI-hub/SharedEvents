@@ -1,14 +1,15 @@
 ﻿namespace SharedEvents.Models
 {
-    public class ServiceNameUpdated
+    public class SpecializationCreated
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
-
-        public ServiceNameUpdated(Guid id, string name)
+        public bool IsActive { get; set; }
+        public SpecializationCreated(Guid id, string name, bool isActive)
         {
             Id = id;
             Name = name;
+            IsActive = isActive;
         }
     }
 }
