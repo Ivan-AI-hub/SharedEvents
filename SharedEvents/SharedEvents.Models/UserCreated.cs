@@ -6,10 +6,10 @@
         public string Email { get; set; }
         public string ConfirmEmailUrl { get; set; }
 
-        public UserCreated(Guid id, string userEmail, string confirmEmailUrl)
+        public UserCreated(Guid id, string email, string confirmEmailUrl)
         {
             Id = id;
-            Email = userEmail;
+            Email = email;
             ConfirmEmailUrl = confirmEmailUrl;
         }
     }
